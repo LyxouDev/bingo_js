@@ -28,6 +28,7 @@ function clean_grid(){
 }
 
 function random_number(){
+    new_num_str = document.getElementById('nv_numero')
     num = Math.trunc(Math.random()*90) + 1
 
     while(temp.includes(num)){
@@ -35,14 +36,20 @@ function random_number(){
     }
 
     temp.push(num)
+    new_num_str.textContent = num
 
     return num;
 }
 
 document.body.onkeyup = function(e) {
+    // Tirage nouveau numéro
     if (e.code == "Space") {
-        change_to_old_num()    
+        change_to_old_num()
+        change_to_new_num(random_number())  
     }
     
-    change_to_new_num(random_number())
+    // Reset Grille
+    if(e.code == 'KeyR'){
+        clean_grid()
+    }
 }

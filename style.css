@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+    display: flex;
+    align-items: center;
+}
+
 #grille{
     margin-top: 5vh;
     margin-left: 5vh;
@@ -31,4 +36,10 @@
 .green{
     background-color: greenyellow;
     border-radius: 50%;
+}
+
+#nv_numero{
+    width: 30vh;
+    margin-left: 10vh;
+    font-size: 50vh;
 }
