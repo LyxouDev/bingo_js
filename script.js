@@ -17,13 +17,15 @@ function change_to_new_num(idx){
 }
 
 function clean_grid(){
+    new_num_str = document.getElementById('nv_numero')
+
     for(i=1; i<91; i++){
         num_cell = document.getElementById(i)
 
         num_cell.classList.remove("green")
         num_cell.classList.remove("orange")
     }
-
+    new_num_str.textContent = ''
     temp = []
 }
 

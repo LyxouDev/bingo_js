@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-body{
+body #main_grille{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #grille{
@@ -43,4 +44,10 @@ body{
     margin-left: 10vh;
     font-size: 50vh;
     text-align: center;
+}
+
+#aide{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
 }
